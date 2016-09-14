@@ -13,11 +13,11 @@ environment: prod
 baseurl: "/" # the subpath of your site, e.g. /blog/
 #url: "http://aesinv.com" # the base hostname & protocol for your site
 url: ""
-source: project
-destination: _dist
+source: './project'
+destination: './_dist'
 assets:
-  img: "img/"
-  js: "js/"
+  img: 'img/'
+  js: 'js/'
 
 
 # --------------------------------
