@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  
+  
+  <title>Christian Leppong </title>
+  <!--// Metadata //-->
+  <meta name="author" content="Ben Anggoro" />
+  <meta name="description" content="Hub3c VideoChat App prototype in HTML/CSS/JS
+ by Ben Anggoro for Geekseat">
+  <link rel="icon" href="/favicon.ico" />
+  <!--// Stylesheets //-->
+  <link rel="stylesheet" href="/css/app.css">
+  <link rel="canonical" href="//contacts/christian-leppong/">
+</head>
+  <body class="layout--contact">
+    <header id="windowHeader" class="window-header navbar navbar-inverse navbar-fixed-top">
+  <div class="window-header-inner">
+  	<div class="window-toolbar">
+  		<span class="toolbar-btn close-window"></span>
+  		<span class="toolbar-btn resize"></span>
+  		<span class="toolbar-btn full-screen"></span>
+  	</div>
+  </div>
+</header>
+
+    <div id="mainWrapper" class="main--wrapper layout--contact-wrapper">
+			<div id="sidebarMain" class="sidebar--main layout--contact" role="navigation">
+	<a id="closePanel" class="btn btn--close"></a>
+	<header id="sidebarHeader" class="sidebar--header">
+	<figure id="userPrimary" class="user--primary">
+	<img class="user--primary-img img-circle" src="/img/ben.jpg">
+	<span class="status-label online"></span>
+	<figcaption class="user--primary-info">
+		<span class="user--primary-username h5">Ben Anggoro</span>
+		<span class="user--primary-status small">Online</span>
+	</figcaption>
+</figure>	
+	<div class="section-header">
+  	<span class="section-title h6">My Contacts</span>
+  	<button class="btn btn--icon-sm btn-green add-contacts" title="Add New Contacts"><i class="fa fa-plus"></i><span class="sr-only">Add Contacts</span></button>
+  </div>	
+  <section id="contactsSearch" class="sidebar-search input-group">
+	<span class="input-group-btn">
+		<button id="toggleSearch" class="btn btn--search" type="button"><span class="sr-only">Search</span><i class="fa fa-search"></i></button>
+	</span>
+	<input id="searchContacts" type="text" class="form-control search-contacts" name="searchContacts" placeholder="Search Contacts...">
+</section>
+</header>
+	<section id="sidebarContacts" class="sidebar--contacts layout--contact">
+  <ul class="nav nav-stacked contacts-list">
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/abraham-arief-suryadi/">
+        <span class="contactImg"><img src="/img/abraham.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Abraham Arief Suryadi</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/alit-sariwegading/">
+        <span class="contactImg"><img src="/img/alit.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Alit Sariwegading</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/alvian-hutahean/">
+        <span class="contactImg"><img src="/img/vian.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Alvian Hutahean</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/anova-fawzi/">
+        <span class="contactImg"><img src="/img/anova.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Anova Fawzi</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info active">
+    
+      <a href="/contacts/christian-leppong/">
+        <span class="contactImg"><img src="/img/christian.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Christian Leppong</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/denny-chandra/">
+        <span class="contactImg"><img src="/img/denny.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Denny Chandra</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/donny-onggowidjaja/">
+        <span class="contactImg"><img src="/img/donny.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Donny Onggowidjaja</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/fajar-nurdiansyah/">
+        <span class="contactImg"><img src="/img/fajar.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Fajar Nurdiansyah</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/fitrianingrum/">
+        <span class="contactImg"><img src="/img/fitri.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Fitrianingrum</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/garreth-beachy-head/">
+        <span class="contactImg"><img src="/img/garreth.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Garreth Beachy Head</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/katie-beachy-head/">
+        <span class="contactImg"><img src="/img/katie.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Katie Beachy Head</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/mike-beachy-head/">
+        <span class="contactImg"><img src="/img/mike.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Mike Beachy Head</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/rikky-hermanto-hasibuan/">
+        <span class="contactImg"><img src="/img/rikky.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Rikky Hermanto Hasibuan</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/ronal-daniel-panjaitan/">
+        <span class="contactImg"><img src="/img/daniel.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Ronal Daniel Panjaitan</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/vinky/">
+        <span class="contactImg"><img src="/img/vinky.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Vinky</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+    
+    <li class="contact-info">
+    
+      <a href="/contacts/yulius-arief/">
+        <span class="contactImg"><img src="/img/yulius.jpg" class="img-responsive img-circle">
+        <span class="status-label online"></span></span>
+        <span class="contactInfo">
+          <span class="contactName">Yulius Arief</span>
+          <span class="contactStatus">Online</span>
+        </span>
+      </a>
+    </li>
+  
+</ul>
+</section> 
+
+	<footer id="sidebarFooter" class="sidebar--footer">
+	<p class="copyright-text">&copy; 2016 Hub3C</p>
+</footer>
+ 
+</div>
+
+			<div id="mainStage" class="main--stage main--stage-contact">
+	<a id="closePanel" class="btn btn--close"></a>
+	<header id="mainStageHeader" class="main--stage-header layout--contact">
+  <div class="header-inner">
+  	<figure id="userSecondary" class="user--secondary">
+	<img class="user--secondary-img img-circle" src="/img/christian.jpg">
+	<span class="status-label online"></span>
+	<figcaption class="user--secondary-info">
+		<span class="user--secondary-username h5">Christian Leppong</span>
+		<span class="user--secondary-status small">Online</span>
+	</figcaption>
+</figure>
+  	<div class="toolbar--chat-top">
+  <div class="toolbar--chat-inner">
+  	<!--
+   	<button type="button" class="btn btn--icon-lg" title="Start Voice Call"><span class="sr-only">Start Voice Call</span><i class="fa fa-phone"></i></button>-->
+    <button id="backToContacts" type="button" class="btn btn--icon-lg btn--back-to-contacts" title="Back to Contacts"><span class="sr-only">Back to Contacts</span><i class="fa fa-user"></i></button>
+    <button id="startVideoCall" type="button" class="btn btn--icon-lg" title="Start Video Call"><span class="sr-only">Start Video Call</span><i class="fa fa-video-camera"></i></button>
+  </div>    
+</div>
+  </div>
+</header>
+
+	<div id="mainStageContent" class="main--stage-content content--layout-contact">
+	<div class="content-inner">
+		<div class="chat-list">
+	<ul>
+		<li class="chat-item user-2">
+			<span class="user--chat-img sm"><img src="/img/christian.jpg" class="img-responsive img-circle" /></span>
+			<span class="chat-body">
+				Aenean diam dolor, rutrum at ipsum eget, accumsan vehicula urna. Etiam quis viverra felis, id interdum magna.
+			</span>
+		</li>
+		<li class="chat-item user-1">
+			<span class="user--chat-img sm"><img src="/img/ben.jpg" class="img-responsive img-circle" /></span>
+			<span class="chat-body">
+				Fusce eleifend quam elit, et elementum libero semper a. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam accumsan enim in justo imperdiet mollis. Phasellus congue sapien quis ipsum consectetur, venenatis ullamcorper metus viverra.
+			</span>
+		</li>
+	</ul>
+</div>
+
+
+	</div>		
+</div>
+	<footer id="mainStageFooter" class="main--stage-footer layout--contact">
+  <div class="footer-inner">
+  	<form id="formChat" class="form--chat form-horizontal">
+  <div class="textarea--chat">
+    <label for="chatTextArea" class="control-label sr-only">Type your message here</label>
+    <textarea id="chatTextArea" class="form-control" placeholder="Say something..."></textarea>
+  </div>
+  <div class="toolbar--chat">
+  <div class="toolbar--chat-inner">
+    <span class="input-file-container btn--send-file">
+      <button type="button" class="btn btn--icon-sm"><i class="fa fa-file"></i></button>
+      <label for="sendFile" class="control-label sr-only">Send File</label>
+      <input type="file" id="sendFile" class="send-file">
+    </span>
+    <button type="button" class="btn btn--icon-sm btn--share-screen">
+      <span class="sr-only">Share Screen</span><i class="fa fa-desktop"></i>
+    </button>
+    <button type="submit" class="btn btn--icon-lg btn--send-message">
+      <span class="sr-only">Send Message</span><i class="fa fa-paper-plane"></i>
+    </button>
+  </div>    
+</div>        
+</form> 
+
+  </div>
+</footer>
+
+</div>
+<section id="videoStage" class="video--stage video--stage-">
+	<div class="video--stage-wrapper">
+		<header id="videoStageHeader" class="video--stage-header">
+			<div class="video--toolbar-top">
+				<button id="openContacts" class="btn btn--icon-lg btn--open-contacts"><span class="sr-only">My Contacts</span><i class="fa fa-user"></i></button>
+				<button id="hangUp" class="btn btn--icon-lg btn--hang-up"><span class="sr-only">Hang Up</span><i class="fa fa-phone"></i></button>
+			</div>
+		</header>
+		<div id="videoStageContent" class="video--stage-content">
+		</div>
+	</div>	
+	<footer id="videoStageFooter" class="video--stage-footer">
+		<div class="video--toolbar-bottom">
+			<button id="muteVoice" class="btn btn--icon-lg btn--mute-voice"><span class="sr-only">Mute</span><i class="fa fa-microphone"></i></button>
+			<button id="muteVideo" class="btn btn--icon-lg btn--mute-video"><span class="sr-only">Video Off</span><i class="fa fa-video-camera"></i></button>
+			<button id="shareScreen" class="btn btn--icon-lg btn--share-screen"><span class="sr-only">Share Screen</span><i class="fa fa-desktop"></i></button>
+		</div>
+		<button id="openChat" class="btn btn--icon-lg btn--open-chat"><span class="sr-only">Open Chat Window</span><i class="fa fa-comments"></i></button>
+	</footer>
+</section>
+    </div>		
+    <script src="/js/vendor.js"></script>
+<script src="/js/app.js"></script>
+  </body>
+</html>
