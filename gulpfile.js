@@ -1,25 +1,22 @@
 /**
- * Main gulpfile for aesinv.com, my Jekyll blog
- * @todo: see `modular-gulpfile.js` - TO BE MOVED TO SEPARATE BRANCH
- */
+ * Main Gulp File
+ **/
 
-var gulp          = require('gulp'),
-
-    /** Utils */
-    watch         = require('gulp-watch'),
-    plugins       = require('gulp-plumber'),
-    browserSync   = require('browser-sync').create('jekyll'),
-    requireDir    = require('require-dir'),
-    runSequence   = require('run-sequence'),
-    gutil         = require('gulp-util'),
-    gulpAutoTask  = require('gulp-auto-task'),
-
-    /** Config */
-    paths        = require('./package.json').paths;
+const gulp          = require('gulp'),
+      /** Utils */
+      watch         = require('gulp-watch'),
+      plugins       = require('gulp-plumber'),
+      browserSync   = require('browser-sync').create('jekyll'),
+      requireDir    = require('require-dir'),
+      runSequence   = require('run-sequence'),
+      gutil         = require('gulp-util'),
+      gulpAutoTask  = require('gulp-auto-task'),
+      /** Config */
+      paths        = require('./package.json').paths;
 
 /** Import Main Tasks */
 // Require them so they can be called as functions
-var utils = requireDir('gulp-tasks');
+const utils = requireDir('gulp-tasks');
 // Automagically set up tasks
 gulpAutoTask('{*,**/*}.js', {
   base: paths.tasks,
@@ -27,11 +24,11 @@ gulpAutoTask('{*,**/*}.js', {
 });
 
 /** Helper Tasks */
-gulp.task('build', function(callback) {
+gulp.task('build', (callback) => {
   return utils.buildJekyll(callback, 'serve');
 });
 
-gulp.task('build:prod', function(callback) {
+gulp.task('build:prod', (callback) => {
   return utils.buildJekyll(callback, 'prod');
 });
 
@@ -41,21 +38,21 @@ gulp.task('build:assets', ['buildCss', 'buildJs', 'optimizeImg']);
  * BrowserSync
  */
 // Init server to build directory
-gulp.task('browser', function() {
+gulp.task('browser', () => {
   browserSync.init({
     server: "./" + paths.build,
   });
 });
 
 // Force reload across all devices
-gulp.task('browser:reload', function() {
+gulp.task('browser:reload', () => {
   browserSync.reload();
 });
 
 /**
  * Main Builds
  */
-gulp.task('serve', ['browser'], function() {
+gulp.task('serve', ['browser'], () => {
   runSequence('build', ['build:assets']);
   // CSS/SCSS
   watch([
@@ -66,15 +63,15 @@ gulp.task('serve', ['browser'], function() {
         paths.bower + paths.fontawesome + '*.scss',
         paths.css.src +'app.scss',
         paths.sass.src +'**/*.scss',
-  ], function() {
+  ], () => {
     runSequence('buildCss', ['browser:reload']);
   });
   // JS
-  watch([paths.js.src +'*.js', paths.vendor.src +'*.js'], function() {
+  watch([paths.js.src +'*.js', paths.vendor.src +'*.js'], () => {
     runSequence('buildJs', ['browser:reload']);
   });
   // Images
-  watch([paths.img.src +'*', paths.img.src +'**/*'], function() {
+  watch([paths.img.src +'*', paths.img.src +'**/*'], () => {
     runSequence('optimizeImg', ['browser:reload']);
   });
   // Markup / Posts/ Data
@@ -88,13 +85,13 @@ gulp.task('serve', ['browser'], function() {
         paths.src +'_includes/**/*.md',
         paths.src +'_includes/**/*.svg',
         paths.src +'_includes/**/*.html',
-  ], function() {
+  ], () => {
     runSequence('build', ['build:assets', 'browser:reload']);
   });
 
   gutil.log('Watching for changes.');
 });
 
-gulp.task('deploy', function() {
+gulp.task('deploy', () => {
   runSequence('build:prod', ['build:assets']);
 });

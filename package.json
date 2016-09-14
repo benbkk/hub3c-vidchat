@@ -32,11 +32,11 @@
       "js": "bootstrap-sass/assets/javascripts/",
       "fonts": "bootstrap-sass/assets/fonts/"
     },
-    "fontawesome" : "font-awesome/scss/",
+    "fontawesome": "font-awesome/scss/",
     "sass": {
       "src": "project/_sass/"
     },
-    "hamburgers" : "css-hamburgers/_sass/hamburgers/",
+    "hamburgers": "css-hamburgers/_sass/hamburgers/",
     "css": {
       "src": "project/css/",
       "dest": "_dist/css/"
@@ -72,7 +72,7 @@
   "devDependencies": {
     "browser-sync": "^2.8.2",
     "graceful-fs": "^4.1.4",
-    "gulp-clean-css": "^2.0.11",
+    "gulp-clean-css": "^2.0.12",
     "gulp-filter": "^4.0.0",
     "gulp-main-bower-files": "^1.5.2",
     "gulp-plumber": "^1.1.0",
