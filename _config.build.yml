@@ -1,0 +1,44 @@
+# --------------------------------
+# Site settings
+title: Hub3c VideoChat
+author: Ben Anggoro
+email: ben@benworkandplay.com
+project: Geekseat
+description: > # this means to ignore newlines until "baseurl:"
+  App prototype in HTML/CSS/JS
+
+# --------------------------------
+# Environment Settings
+environment: prod
+baseurl: "/" # the subpath of your site, e.g. /blog/
+#url: "http://aesinv.com" # the base hostname & protocol for your site
+url: ""
+source: project
+destination: _dist
+assets:
+  img: "img/"
+  js: "js/"
+
+
+# --------------------------------
+# Build settings
+markdown: kramdown
+safe: false
+future: true
+
+# --------------------------------
+# Includes & Excludes
+exclude: [css/]
+include: [js/,fonts/,icons/]
+
+collections:
+  contacts:
+    output: true
+    permalink: /contacts/:path/
+
+defaults:
+  scope:
+    path: "contacts"
+    type: contacts
+    values:
+      layout: contact
