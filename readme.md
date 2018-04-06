@@ -1,3 +1,6 @@
-# Hub3c Video Chat Prototype #
+### ⚠️ Deprecated and should not be taken as reference
 
-Built with Jekyll
+# Hub3c Video Call Prototype
+https://hub3c-vidchat.aerobaticapp.com/?__preview=laptop
+
+Another prototype for Video Call app. Powered by Jekyll.
